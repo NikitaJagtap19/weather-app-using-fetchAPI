@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather-app-using-fetchAPI </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<main class="main-container ">
+  <!----------- input conatiner ---------- -->
+  <header class="input-container">
+  <input type="text" placeholder="search city" class="input-text">
+  <i class="fa-solid fa-magnifying-glass search-btn"></i>
+  </header>
+<!----------- weather conatiner ---------- -->
+  <section class="weather-info-container">
+
+    <div class="weather-info">
+    <div class="location-date">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4 class="cityText">Nashik</h4>
+    </div>
+    <h5 class="current-date-text regular-utility">Sat,18 Oct</h5>
+  </div>
+
+    
+ <div class="weather-summary-container">
+  <img src="assets/weather/clouds.svg" alt="clouds" class="weather-summary-img">
+   <div class="weather-summary-info">
+    <h1 class="temp-text">29°C</h1>
+    <h3 class=" weather-condition regular-utility"> Cloudy</h3>
+   </div>
+  </div>
+
+
+ <div class="weather-summary-container">
+  <div class="container-item">
+    <i class="fa-solid fa-droplet " ></i>
+    <div class="water-summary-info">
+      <h5 class="regular-utility">Humaditity</h5>
+      <h5 class="humidity-value">5%</h5>
+    </div>
+</div>
+
+<div class="container-item">
+    <i class="fa-solid fa-wind"></i>
+    <div class="water-summary-info">
+      <h5 class="regular-utility">Win speed</h5>
+      <h5 class="wind-speed-value">11 M/S</h5>
+    </div>
+</div>
+</div>
+
+<!----------- forecast conatiner ---------- -->
+<div class="forecast-item-conatiner">
+  
+  <div class="forecast-item">
+    <h5 class="forecast-item-date">05 ,oct</h5>
+    <img src="assets/weather/drizzle.svg" alt="drizzle-img">
+    <h5 class="forecast-item-date">30°C</h5>
+  </div>
+
+  <div class="forecast-item">
+    <h5 class="forecast-item-date">05 ,oct</h5>
+    <img src="assets/weather/drizzle.svg" alt="cloud-img" class="forecast-item-img">
+    <h5 class="forecast-item-date">30°C</h5>
+  </div>
+
+  <div class="forecast-item">
+    <h5 class="forecast-item-date">05 ,oct</h5>
+    <img src="assets/weather/drizzle.svg" alt="cloud-img">
+    <h5 class="forecast-item-date">30°C</h5>
+  </div>
+
+  <div class="forecast-item">
+    <h5 class="forecast-item-date">05 ,oct</h5>
+    <img src="assets/weather/drizzle.svg" alt="cloud-img">
+    <h5 class="forecast-item-date">30°C</h5>
+  </div>
+  </div>
+
+</section>
+
+<!------------not found ------------->
+<div class="not-found-city-container" style="display: none;">
+  <img src="assets/message/not-found.png" alt="not-found-city">
+  <div class="not-found-text">
+  <h3>Serach City</h3>
+  <h5 class="regular-utility">Find out the weather condition of your city</h5>
+  </div>
+</div>
+  </main>
+
+  <script src="script.js"></script>
+</body> 
+</html>
